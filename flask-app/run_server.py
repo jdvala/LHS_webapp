@@ -6,6 +6,7 @@
 
 # import the necessary packages
 import os
+from keras import backend as k
 import keras.models as kerasModel
 from keras.preprocessing.text import Tokenizer
 import pickle
@@ -18,6 +19,7 @@ import io
 from werkzeug.utils import secure_filename
 from keras.preprocessing.sequence import pad_sequences
 import sys
+import tensorflow as tf
 
 # init the flask application 
 app = flask.Flask(__name__)
@@ -36,7 +38,15 @@ def load_model():
     """
     global model  # We will have model variable to be global hence it can be used anywhere
 
-    model = kerasModel.load_model('/home/jay/LHS/model/binary-classifier.h5')
+    global graph
+    # before loading the model, clear the session
+    k.clear_session()
+
+    # load the model
+    model = kerasModel.load_model('/home/jay/LHS_webapp/model/binary-classifier.h5')
+
+    # load the default graph
+    graph = tf.get_default_graph()
 
 
 # Preprocess input data, so I need to set a lot of variable and check conditions before
@@ -104,12 +114,20 @@ def prepare_data(data):
     else:   # if the data variable is not string, throw an error
         raise TypeError("Invalid input is {} but expected type to be {}".format(type(_variable, str)))
 
+    #print("Printing contents and Exiting....")
+    #print(_processed)
+    #sys.exit()
+
+
 
     # if everything is fine then just add tokenize the _processed variable
-    _tokenized = tokenizer.fit_on_texts(_processed)
+    tokenizer.fit_on_texts(_processed)
+    
+    # Convert these sequence to text
+    _toNum = tokenizer.texts_to_sequences(_processed)
 
     # pad if necessary
-    _padded = pad_sequences(_tokenized, max_len=MAX_LEN)
+    _padded = pad_sequences(_toNum, maxlen=MAX_LEN)
 
     # now everything seems fine and we can send this for prediction
 
@@ -151,17 +169,29 @@ def predict():
         _sentences = prepare_data(content)
 
         #if everything is fine
-        _predictions = model.predict(_sentences)
+        
+        # debug
+        #print(model.summary())
 
+        # The default graph loaded in the load_model function has to be used here otherwise it gives out 
+        # wierd errors
+        # "ValueError: Tensor Tensor("dense_1/Sigmoid:0", shape=(?, 2), dtype=float32) is not an element of this graph."
+        with graph.as_default():
+            
+            # ordered model to make predict function ready
+            model._make_predict_function()
+            _predictions = model.predict(_sentences)
+
+        #data["predictions"] = []
         # argmax the _predictions
 
         _classes = np.argmax(_predictions, axis=1)
 
-        data['prediction'].append(_classes)
+        #data['predictions'].append(_classes)
 
 
-        data['success': True]
-    return flask.jasonify(data)
+        #data['success': True]
+    return flask.jsonify(_classes.tolist())
 
 
 

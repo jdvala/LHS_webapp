@@ -1,0 +1,78 @@
+
+The eEurope 2005 action plan succeeds the 2002 action plan which mainly focused on Internet connectivity in Europe. The new action plan, which was approved by the Seville European Council in June 2002, is aimed at translating this connectivity into increased economic productivity and improved quality and accessibility of services for all European citizens based on a secure broadband infrastructure available to the largest possible number of people.
+
+The general objective of the eEurope 2005 action plan is to stimulate the development of services, applications and contents while speeding up the deployment of secure broadband Internet access. Broadband will ensure high-speed and continuous access to the Internet. There is also the general aim of providing access for everyone in order to combat social exclusion, whether it is due to particular needs, a disability, age or illness.
+The main objectives to be achieved by 2005 in the framework of eEurope 2005 are:
+modern online public services:
+e-government services;
+e-learning services;
+e-health services.
+a dynamic e-business environment;
+a secure information infrastructure;
+widespread availability of broadband access at competitive prices;
+benchmarking and the dissemination of good practice.
+eEurope 2005 follows the same approach as eEurope 2002, which is to define clear objectives and to benchmark progress as it is made. It also aims to speed up the adoption of new legislative instruments and to redirect programmes towards the priorities identified.
+MODERN ONLINE PUBLIC SERVICES
+e-government
+eEurope 2005 proposes the following activities for the introduction of modern online public services:
+providing broadband connections for all public authorities by 2005;
+the adoption by the Commission, by the end of 2003, of a framework for interoperability to facilitate the provision of pan-European e-government services for citizens and businesses. Interoperability means the capacity with which two programmes (a client and a server, for example) are able to exchange and interpret their data properly;
+interactive public services which are accessible to everyone via broadband networks and multi-platform access (telephone, television, PC, etc.) by the end of 2004;
+most public supply contracts to be awarded electronically by the end of 2005;
+ease of access for all citizens to public access points to the Internet (PAPI).
+e-learning
+The action plan encourages further use of electronic means of teaching, as with the e-learning initiative. In this framework, eEurope 2005 proposes a series of targeted measures, including:
+broadband Internet access for all schools and universities by 2005;
+online access to be made available by universities to students and researchers by the end of 2005 - with the support of the e-learning and eTen programmes;
+the launching by the Commission, by the end of 2003, of research activities on the deployment of computer networks and platforms based on high-performance design infrastructures;
+the launching by the Member States, with support from the Structural Funds, of training activities to provide adults with the skills needed to work in a knowledge-based society.
+e-health
+The action plan emphasises that digital technologies offer substantial benefits for health management. They offer the potential not only to reduce administrative costs, but also to deliver health care services at a distance and to provide medical information and preventative services. In this field, the eEurope 2005 action plan provides for:
+the presentation by the Commission, in the spring of 2003, of a proposal for the introduction of a pan-European health insurance card, which will replace the paper forms currently needed to obtain care in another Member State;
+the establishment by the Member States of health information networks between points of care (hospitals, laboratories and homes);
+the provision of online health services to the general public (e.g. electronic medical records, teleconsultation, eReimbursement).
+A DYNAMIC e-BUSINESS ENVIRONMENT
+e-business comprises both e-commerce (buying and selling online) and business restructuring processes. In this field, the activities envisaged include:
+reassessment by the Commission of the current legislation in order to identify and, where necessary, eliminate factors which prevent businesses from launching into e-business. An e-business summit, planned for 2003, will mark the launching of this reassessment, which is open to all parties concerned;
+the establishment by the Commission of a European eBusiness network to support small and medium-sized enterprises (SMEs) in order to strengthen and coordinate activities to assist eBusiness;
+private sector development of interoperable eBusiness solutions for transactions, security, procurement and payments.
+
+The gradual introduction of a secure information infrastructure is one of the main objectives of the eEurope 2005 action plan. Measures have already been adopted in this field at European Union level: a proposal from the Commission in June 2001 on network security, combating cyber crime in the framework of the eEurope 2002 action plan, a Directive on the protection of personal data in the telecommunications sector, and activities under the research framework programme. In the field of security, the new action plan proposes the following activities:
+the establishment of a cyber security task force - on the basis of a proposal which the Commission should put forward in 2002;
+the introduction by the public and private sectors of a "security culture" in the design and implementation of information and communication products;
+examining the possibility for secure communications between public services.
+
+The eEurope 2005 action plan calls for the stimulation of innovation and increased use of and investment in broadband communications. To achieve this, the action plan focuses on the following activities:
+use of the new regulatory framework for radio spectrum policy to guarantee frequency availability for wireless broadband services;
+support for broadband access in less-favoured areas;
+increased provision by public authorities of their contents on different interactive technological platforms;
+speeding up the transition to digital television.
+
+The action plan also provides for measures for the analysis, identification and dissemination of good practices, in particular through conferences and support networks. In the framework of the benchmarking exercise launched by eEurope 2002, it is planned that a list of indicators and a renewed methodology will be put in place at European Union level by the end of 2002.
+
+
+Communication from the Commission of 21 August 2009 to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions - Final Evaluation of the eEurope 2005 Action Plan and of the multiannual programme (2003-2006) for the monitoring of eEurope 2005 Action Plan, dissemination of good practices and the improvement of network and information security (Modinis) [COM(2009) 432 final – Not published in the Official Journal].
+This Communication reports on the final evaluation of the eEurope 2005 Action Plan and the Modinis Programme.
+With regard to the eEurope 2005 Action Plan, the evaluators found the strategy to be useful and relevant. In fact, the Programme had enabled a dialogue between countries with very different cultures and references to be set up and maintained. Weaknesses were noted concerning the stakeholders’ group, which did not appear to fulfil its advisory role in a satisfactory manner.
+The Modinis Programme also received a positive assessment in that it added value to Member States’ activities. However, a lack of transparency was found in the relationship between the Modinis Management Committee and the eEurope Advisory Group.
+The weaknesses identified did not, however, affect the implementation of the Programme. They have been taken into account under the framework of the i2010 Initiative and one of its main funding instruments (ICT-PSP).
+Commission communication of 18 February 2004 "eEurope 2005 mid-term review" [COM(2004) 108 final – Not published in the Official Journal].
+The report highlights the encouraging results produced by the action plan in many fields, particularly on broadband connections and e-government. The proportion of basic government services fully available online grew from 17% to 43% between October 2001 and October 2003. In addition, the number of broadband connections in the EU almost doubled between 2002 and 2003.
+The report gives details of the progress made in seven fields and pinpoints the areas where further efforts are needed:
+e-government: Good progress has been made in this area, but wide differences persist between Member States in terms of the range of services available. Reinforced cooperation is needed at EU level on policy orientation and financial support.
+e-learning: Almost every educational and training centre is now connected to the Internet. The review of the action plan will have to address the need systematically to evaluate the lessons that have been learnt from all the initiatives and pilot actions.
+e-health: e-health is becoming a central aspect of health policy at regional, national and European level. However, work needs to continue on the e-health activities proposed in eEurope: electronic health cards; online health services and health information networks. A firm political commitment is needed to create Europe-wide interoperability in this field.
+e-business: Despite a steady increase in buying and selling on-line, achievements in the e-business field should extend beyond e-commerce to encompass the full integration of information and communication technologies (ICT) into business processes. Once again, the insufficient interoperability of business applications impedes the adoption of new forms of collaboration. Efforts must also continue on the establishment of the .eu top level domain and the adoption of secure and effective e-payment systems.
+Broadband: The broadband market is expanding fast. However, the EU must overcome two challenges before it can reap the full benefits of broadband:
+private investment in broadband networks in less favoured areas is held back by fears for its profitability;
+the take-up of broadband lags behind availability in all Member States.
+The review of the action plan will therefore have to bring about a shift to demand patterns. Further ahead, it will also have to address the issue of digital rights management (DRM).
+Security: Almost 80% of European citizens are afraid of buying over the Internet, while only 54% of companies have a formal security policy. Network and information security is one of the top priorities for the EU since it is a prerequisite for development of the information society. This high priority was reflected, in particular, by the rapid adoption of the regulation to establish a European Network and Information Security Agency.
+e-inclusion: e-inclusion is a horizontal concern for all areas of eEurope 2005. In particular, a greater focus is needed on the establishment of European network accessibility standards, on web accessibility initiative (WAI) guidelines and common labelling for accessible web pages. Multi-platform access (via PC, digital TV, 3rd generation mobile telephones, etc.) must be promoted to improve accessibility for excluded groups and disadvantaged regions.
+The report will provide the starting-point for discussion with the Member States and stakeholders to decide the adjustments needed to eEurope 2005 by the summer of 2004.
+Communication from the Commission of 21 November 2002 on eEurope 2005: Benchmarking indicators [COM(2002) 772 final − Not published in the Official Journal].
+To monitor progress with the action plan, the Communication introduces the various indicators proposed by the Commission for the benchmarking of eEurope 2005. These indicators relate to citizens' access to and use of the Internet, enterprises' access to and use of ICT, Internet access costs, e-government, e-learning, e-health, buying and selling online, e-business readiness, Internet users' experience and usage regarding ICT-security, and broadband penetration.
+
+Council Resolution of 18 February 2003 on the implementation of the eEurope 2005 action plan [Official Journal C 48 of 28.02.2003].
+Essentially, the Council calls upon the parties concerned, especially the Member States and the Commission, to do their utmost to achieve the objectives of eEurope 2005 by the end of 2005. An annex to the Resolution contains a list of benchmarking indicators for assessing progress in achieving those objectives.
+
