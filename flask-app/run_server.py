@@ -9,11 +9,11 @@ import os
 import keras.models as kerasModel
 from keras.preprocessing.text import Tokenizer
 import pickle
-from utils import sliding_window_sentences as slidingWindow
+#from utils import sliding_window_sentences as slidingWindow
 import enprocessing as enprocess  # have to import other language scripts as well
 import numpy as np
 import flask
-from dataSet import create_sentences as create 
+#from dataSet import create_sentences as create 
 import io
 from werkzeug.utils import secure_filename
 from keras.preprocessing.sequence import pad_sequences
@@ -52,7 +52,7 @@ def chunks(l, n):
 # load the tokenizer object that we already have
 def load_tokenizer():
     """Returns tokenizer object"""
-    with open('/home/jay/LHS/model/tokenizer.pickle', 'rb') as _f:
+    with open('/home/jay/LHS_webapp/model/tokenizer.pickle', 'rb') as _f:
         tokenizer = pickle.load(_f)
     return tokenizer
 
@@ -61,59 +61,59 @@ def load_tokenizer():
 tokenizer = load_tokenizer()
 
 
-def prepare_data(data):
-    """Returns data after preprocessing"""
-    
-    # preprocess the incoming data
-    preProcessed = enprocess.main(data)
-
-    validation_sentences = slidingWindow(preProcessed.split(),10,10)
-
-    padded_sentences = create(validation_sentences, tokenizer_obj=tokenizer)
-
-    return padded_sentences
-
-
 # def prepare_data(data):
-#     """Returns data after preprocessing it, then tokenizing it and then converting text
-#     sequence into numeric form for our model to understand
+#     """Returns data after preprocessing"""
+    
+#     # preprocess the incoming data
+#     preProcessed = enprocess.main(data)
 
-#     :param data: Text data of arbitary length
-#     :return _toPredict: Numpy array to be predicted
-#     """
-#     # load the 
+#     validation_sentences = slidingWindow(preProcessed.split(),10,10)
 
-#     _variable = data
-#     if isinstance(_variable, str): # check if the data passed to the function is string
-#         # we will do our thing, check the length of the string
-#         if len(_variable.split()) == MAX_LEN:  # if it contains 30 words then we are fine
-#             # call the function to preprocess the data
-#             _processed = enprocess.main(_variable)
+#     padded_sentences = create(validation_sentences, tokenizer_obj=tokenizer)
 
-#         elif len(_variable.split()) > MAX_LEN: # if the data is more than 30 we will split it
-#             # chunk the data 
-#             _chunk = chunks(_variable.split(),MAX_LEN)
-#             # we can do our thing
-#             _processed = []  #empty list to strore all the preprocessed sentences
-#             for chunk in _chunk:
-#                 _processed.append(enprocess.main(' '.join(chunk)))
-
-#         else:
-#             _processed = enprocess.main(_variable)
-
-#     else:   # if the data variable is not string, throw an error
-#         raise TypeError("Invalid input is {} but expected type to be {}".format(type(_variable, str)))
+#     return padded_sentences
 
 
-#     # if everything is fine then just add tokenize the _processed variable
-#     _tokenized = tokenizer.fit_on_texts(_processed)
+def prepare_data(data):
+    """Returns data after preprocessing it, then tokenizing it and then converting text
+    sequence into numeric form for our model to understand
 
-#     # pad if necessary
-#     _padded = pad_sequences(_tokenized, max_len=MAX_LEN)
+    :param data: Text data of arbitary length
+    :return _toPredict: Numpy array to be predicted
+    """
+    # load the 
 
-#     # now everything seems fine and we can send this for prediction
+    _variable = data
+    if isinstance(_variable, str): # check if the data passed to the function is string
+        # we will do our thing, check the length of the string
+        if len(_variable.split()) == MAX_LEN:  # if it contains 30 words then we are fine
+            # call the function to preprocess the data
+            _processed = enprocess.main(_variable)
 
-#     return _padded
+        elif len(_variable.split()) > MAX_LEN: # if the data is more than 30 we will split it
+            # chunk the data 
+            _chunk = chunks(_variable.split(),MAX_LEN)
+            # we can do our thing
+            _processed = []  #empty list to strore all the preprocessed sentences
+            for chunk in _chunk:
+                _processed.append(enprocess.main(' '.join(chunk)))
+
+        else:
+            _processed = enprocess.main(_variable)
+
+    else:   # if the data variable is not string, throw an error
+        raise TypeError("Invalid input is {} but expected type to be {}".format(type(_variable, str)))
+
+
+    # if everything is fine then just add tokenize the _processed variable
+    _tokenized = tokenizer.fit_on_texts(_processed)
+
+    # pad if necessary
+    _padded = pad_sequences(_tokenized, max_len=MAX_LEN)
+
+    # now everything seems fine and we can send this for prediction
+
+    return _padded
 
 def read_file(path):
     """Reads file contains from the file path provided"""
